@@ -56,7 +56,7 @@ export default class Dribbble {
                 return Request.fetch<Shot>({ url: `/shots/${id}`, method: 'GET' });
             },
             create: (body: ShotsCreateBody) => {
-                return Request.fetch({ url: `/shots`, method: 'POST', body });
+                return Request.fetch({ url: '/shots', method: 'POST', body });
             },
             update: (id: string, body: ShotsUpdateBody) => {
                 return Request.fetch<Shot>({ url: `/shots/${id}`, method: 'PUT', body });
